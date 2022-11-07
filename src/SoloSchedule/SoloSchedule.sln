@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoloSchedule.WebAPI", "SoloSchedule.WebAPI\SoloSchedule.WebAPI.csproj", "{73FF217A-F8F6-4029-900A-B97072BFAE03}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3D9CF932-D440-444B-8FED-3E8C2C3289BE} = {3D9CF932-D440-444B-8FED-3E8C2C3289BE}
+		{587754DD-338F-413A-B270-B5EA5C99773F} = {587754DD-338F-413A-B270-B5EA5C99773F}
+		{E7DC94DB-46AA-42C9-A38C-80E73ADD6B67} = {E7DC94DB-46AA-42C9-A38C-80E73ADD6B67}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoloSchedule.Domain", "SoloSchedule.Domain\SoloSchedule.Domain.csproj", "{587754DD-338F-413A-B270-B5EA5C99773F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoloSchedule.UseCase", "SoloSchedule.UseCase\SoloSchedule.UseCase.csproj", "{E7DC94DB-46AA-42C9-A38C-80E73ADD6B67}"
+	ProjectSection(ProjectDependencies) = postProject
+		{587754DD-338F-413A-B270-B5EA5C99773F} = {587754DD-338F-413A-B270-B5EA5C99773F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoloSchedule.Infrastructure", "SoloSchedule.Infrastructure\SoloSchedule.Infrastructure.csproj", "{3D9CF932-D440-444B-8FED-3E8C2C3289BE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{587754DD-338F-413A-B270-B5EA5C99773F} = {587754DD-338F-413A-B270-B5EA5C99773F}
+		{E7DC94DB-46AA-42C9-A38C-80E73ADD6B67} = {E7DC94DB-46AA-42C9-A38C-80E73ADD6B67}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoloScheduleTest", "SoloScheduleTest\SoloScheduleTest.csproj", "{FB93A470-B95B-41F8-91A5-893778EAE719}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3D9CF932-D440-444B-8FED-3E8C2C3289BE} = {3D9CF932-D440-444B-8FED-3E8C2C3289BE}
+		{587754DD-338F-413A-B270-B5EA5C99773F} = {587754DD-338F-413A-B270-B5EA5C99773F}
+		{73FF217A-F8F6-4029-900A-B97072BFAE03} = {73FF217A-F8F6-4029-900A-B97072BFAE03}
+		{E7DC94DB-46AA-42C9-A38C-80E73ADD6B67} = {E7DC94DB-46AA-42C9-A38C-80E73ADD6B67}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73FF217A-F8F6-4029-900A-B97072BFAE03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73FF217A-F8F6-4029-900A-B97072BFAE03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73FF217A-F8F6-4029-900A-B97072BFAE03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73FF217A-F8F6-4029-900A-B97072BFAE03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{587754DD-338F-413A-B270-B5EA5C99773F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{587754DD-338F-413A-B270-B5EA5C99773F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{587754DD-338F-413A-B270-B5EA5C99773F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{587754DD-338F-413A-B270-B5EA5C99773F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7DC94DB-46AA-42C9-A38C-80E73ADD6B67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7DC94DB-46AA-42C9-A38C-80E73ADD6B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7DC94DB-46AA-42C9-A38C-80E73ADD6B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7DC94DB-46AA-42C9-A38C-80E73ADD6B67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D9CF932-D440-444B-8FED-3E8C2C3289BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D9CF932-D440-444B-8FED-3E8C2C3289BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D9CF932-D440-444B-8FED-3E8C2C3289BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D9CF932-D440-444B-8FED-3E8C2C3289BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB93A470-B95B-41F8-91A5-893778EAE719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB93A470-B95B-41F8-91A5-893778EAE719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB93A470-B95B-41F8-91A5-893778EAE719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB93A470-B95B-41F8-91A5-893778EAE719}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D45933F1-EE3C-4CA1-8FBF-C44EE168E5A2}
+	EndGlobalSection
+EndGlobal
