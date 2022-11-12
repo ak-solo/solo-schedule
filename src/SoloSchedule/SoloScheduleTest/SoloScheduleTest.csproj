@@ -25,5 +25,12 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
+	
+  <ItemGroup>
+    <ProjectReference Include="..\SoloSchedule.Domain\SoloSchedule.Domain.csproj" />
+    <ProjectReference Include="..\SoloSchedule.Infrastructure\SoloSchedule.Infrastructure.csproj" />
+    <ProjectReference Include="..\SoloSchedule.UseCase\SoloSchedule.UseCase.csproj" />
+    <ProjectReference Include="..\SoloSchedule.WebAPI\SoloSchedule.WebAPI.csproj" />
+  </ItemGroup>
 
 </Project>

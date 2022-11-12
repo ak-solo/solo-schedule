@@ -15,4 +15,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SoloSchedule.Domain\SoloSchedule.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
