@@ -7,5 +7,11 @@ namespace SoloSchedule.Infrastructure.SqlServer
     /// </summary>
     public class SoloScheduleContext : DbContext
     {
+        /// <summary>SoloScheduleContext
+        /// SoloScheduleContext
+        /// </summary>
+        /// <param name="options">options</param>
+        public SoloScheduleContext(DbContextOptions<SoloScheduleContext> options)
+            : base(options) { }
     }
 }
